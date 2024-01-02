@@ -6,3 +6,10 @@ var typed = new Typed(".auto-type", {
     backSpeed: 150,
     loop: true
 })
+
+var typed = new Typed(".auto-type-2", {
+    strings: ["projects", "hackathons"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
