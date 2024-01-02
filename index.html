@@ -1,12 +1,213 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<body>
+<html lang="en">
 
-            Just started this website. 
-            Arnav Gattani!
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vidbg.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>arnavg</title>
+    
+     <!-- Bootstrap CSS --->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
+</head>
+
+<body>
+    <header class="header">
+        <img src="logos/gatts-logo.png" class="logo" width="60" height="60" data-aos="fade-down">
+        <nav class="main-nav" data-aos="fade-down">
+            <ul class="list">
+                <li class="item"><a href="#" class="item-link">About</a></li>
+                <li class="item"><a href="#" class="item-link" id="education-link">Education</a></li>
+                <li class="item"><a href="#" class="item-link">Projects</a></li>
+                <li class="item"><a href="#"class="item-link">Travel</a></li>
+            </ul>
+        </nav>
+        <nav class="second-nav" data-aos="fade-down">
+            <ul class="list">
+                <li class="item"><a href="mailto:agattani@seas.upenn.edu" class="item-link">Contact</a></li>
+                <li class="item"><a href="Arnav_Gattani_Resume.pdf" class="item-link">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h1 class="title" data-aos="fade-up" data-aos-delay="600">arnav gattani</h1>
+        <p class="description" data-aos="fade-up" data-aos-delay="1000">
+            fourth-year computer science and physics student at the university of pennsylvania.
+            san francisco bay area native and travel enthusiast
+        </p>
+    </section>
+
+    <div class="video" data-aos="fade-up" data-aos-delay="1200"></div>
+
+    <section id="education" class="features">
+        <div class="container">
+            <h2 class="features-title-2"><span class="auto-type"></span></h2>
+            <div class="row">
+                <div class="col-sm-5">
+                    <hr class="spacer-sections">
+                    <div class="clearfix"></div>
+                    <p class="description" data-aos="fade-up">
+                        I am currently a senior at the University of Pennsylvania persuing a double major in computer science and 
+                        Physics (B.S.E) with a concentration in Business (Wharton School) and minors in mathematics and data science.
+                        I am also concurrently persuing an accelerated masters in computer science (M.S.E) from the school of engineering
+                        and applied sciences. 
+                        <br>
+                        I am passionate about using data and machine learning as a force for good. My research interests lie in energy generation and
+                        quantum computing. I have extensive research and industry experience, having applied ML models on the FAERS drug data in the Shen Lab 
+                        at the Perelman School of Medicine and have worked on classified projects as a reserach intern for Intrinsyx technologies at NASA Ames Reserach Center. 
+                        <br>
+                        When I am not in the lab or grinding psets, you can find me at a hackathon, surfing, or even travelling the world, attempting to achieve my goal of
+                        hitting a hundred countries by 2030!
+
+                    </p>
+
+                    <!---
+                    <h2 data-aos="fade-up-right" style="display:inline-block;"> Valley Christian High School 2016-2020
+                        <img src="vchs-logo.png" width="180" height="60" data-aos="fade-down">
+                    </h2>
+                    <p class="features-text"  data-aos="fade-up-right">
+                        Graduated top of my class with High Honors, 4.6 GPA </br>
+                        ACT: 35, SAT I: 1520 (790/730), SAT II Math: 800, 13 AP classes </br>
+                        Awards: AP Scholar with Distinction, California State Science Fair Winner,</br>
+                        Synopsis Silicon Valley Science Fair Winner, Cal National Parliamentary Debate Winner, </br>
+                        Ranked debater (multiple speaker awards), XPRIZE Engineering 1st Place
+                    </p>
+                    --->
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5">
+                    <hr class="spacer-sections">
+                    <div class="clearfix"></div>
+                    <p>coursework</p>
+                    <div class="dropdown">
+                        <div class="dropdown-btn">Computer Science Theory</div>
+                        <ul class="class-list">
+                          <li>CIS 121: Algorithms and Data Structures</li>
+                          <li>CIS 502: Analysis of Algorithms</li>
+                          <li>CIS 262: Theory of Computation</li>
+                          <li>CIS 2400: Computer Architecture</li>
+                          <li>CIS 3800: Operating System Design and Architecture</li>
+                          <li>CIS 5200: Machine Learning (MS)</li>
+                          <li>CIS 5450: Big Data Analytics (MS)</li>
+                          <li>CIS 5710: Computer Organization (MS)</li>
+                          <li>CIS 5730: Software Engineering (MS)</li>
+                          <li>CIS 5230: Ethical Algorithms Design (MS)</li>
+                          <li>CIS 5500: Database Systems (MS)</li>
+                          <li>CIS 7000: Computational Complexity (PhD)</li>
+                          <li>CIS 6770: Randomized Algorithms (PhD)</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-btn">Physics and Mathematics</div>
+                        <ul class="class-list">
+                          <li>PHYS 1500: Classical Mechanics</li>
+                          <li>PHYS 3351: Analytical Mechanics</li>
+                          <li>PHYS 1510: Electricity and Magnetism</li>
+                          <li>PHYS 1230: Special Relativity and Thermodynamics</li>
+                          <li>PHYS 1250: Modern Physics</li>
+                          <li>PHYS 3364: Labratory Electronics</li>
+                          <li>PHYS 3361: Potential Theory</li>
+                          <li>PHYS 3362: Advanced Electromagnetism: Maxwell's Equations</li>
+                          <li>PHYS 4411: Quantum Mechanics</li>
+                          <li>MATH 1410: Multivariable Calculus</li>
+                          <li>MATH 2400: Differential Equations</li>
+                          <li>MATH 2410: PDE/ODEs</li>
+                          <li>MATH 3120: Linear Algebra</li>
+                          <li>CIS 1600: Discrete Mathematics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <div class="dropdown-btn">Business (Wharton School)</div>
+                        <ul class="class-list">
+                          <li>ECON 001: Microeconomics</li>
+                          <li>ECON 002: Macroeconomics</li>
+                          <li>BEPP 2500: Managerial Economics</li>
+                          <li>LGST 1010: Legal and Social Values</li>
+                          <li>STAT 4750: Sample Survey Design</li>
+                          <li>STAT 4300: Probability Theory</li>
+                          <li>WRIT 0130: Wall Street Anthropology</li>
+                          <li>Market and Social Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-btn">Teaching Assistant (TA) Courses</div>
+                        <ul class="class-list">
+                          <li>CIT 5950 (Graduate - Operating Systems Programming) - Fall 2023</li>
+                          <li>CIT 5930 (Graduate - Computer Architecture) - Fall 2022</li>
+                          <li>CIS 2400 (Introduction to Computer Architecture) - Spring 2023, Summer 2023</li>
+                          <li>PHYS 0151 (Principles I: Classical Mechanics) - Fall 2023</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!--
+    <section id="projects" class="features">
+        <h2 class="features-title" data-aos="fade-up-right">projects</h2>
+        <p class="features-text"  data-aos="fade-up-right">
+            With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying. By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747 aircraft at full power. Falcon Heavy can lift the equivalent of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.
+        </p>
+        <div class="overview">
+            <h2 class="features-title" data-aos="fade-right">education</h2>
+                <div class="container" data-aos="fade-up-right"> 
+                    <div class="card">
+                        <div class="front"> </div>
+                        <div class="back">
+                            <h2 style="display:inline-block;"> University of Pennsylvania 2020-2024</h2>
+                            <table data-aos="fade-up-right" class="table">
+                                <tr>
+                                    <td class="table-column">B.S. in Physics, Concentration in Business and Technology </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-column">B.S.E. + M.S.E. in Computer Science, Minors in Mathematics and Data Science</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+-->
+
+
+    <footer class="footer"  data-aos="fade-up" data-aos-delay="500">
+        <img src="logos/gatts-logo.png" class="logo" width="60" height="60" data-aos="fade-down">
+        <nav class="footer-nav">
+            <ul class="list">
+                <li class="item"><a href="https://www.youtube.com/@arnavgattani2136" target="_blank" class="item-link">Youtube</a></li>
+                <li class="item"><a href="https://www.instagram.com/agattani1/" target="_blank" class="item-link">Instagram</a></li>
+                <li class="item"><a href="https://www.linkedin.com/in/arnavgatt" target="_blank" class="item-link">LinkedIn</a></li>
+                <li class="item"><a href="https://www.github.com/agattani123" target="_blank" class="item-link">Github</a></li>
+            </ul>
+        </nav>
+        <p class="footer-text">for additional questions please contact me: <a class="footer-link" href="#"></a></p>
+        <a href="mailto:agattani@seas.upenn.edu" class="footer-button">Email</a>
+    </footer>
+
+    <script src="js/vidbg.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/type.js"></script>
 
 </body>
 </html>
