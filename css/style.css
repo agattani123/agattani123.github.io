@@ -43,7 +43,7 @@ body {
     transform: translateY(100px);
   }
   
-  .container .card:hover .face.face1{
+  .container .card:hover .face.face1, .card:active{
     transform: translateY(0);
     box-shadow:
       inset 0 0 60px whitesmoke,
@@ -63,7 +63,7 @@ body {
     text-align: center;
   }
   
-  .container .card:hover .face.face1 .content{
+  .container .card:hover .face.face1 .content, .card:active{
     opacity: 1;
    
   }
@@ -99,7 +99,7 @@ body {
     transform: translateY(-100px);
   }
   
-  .container .card:hover .face.face2{
+  .container .card:hover .face.face2, .card:active{
       transform: translateY(0);
   }
   
@@ -120,7 +120,7 @@ body {
     display: inline-block;
   }
   
-  .container .card .face.face2 .content a:hover{
+  .container .card .face.face2 .content a:hover, a:active{
     background: #333 ;
     color: whitesmoke; 
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
@@ -176,7 +176,7 @@ body {
     color: #333; /* Set text color */
 }
 
-.dropdown:hover .class-list {
+.dropdown:hover .class-list, .dropdown:active {
     display: block;
 }
 
@@ -317,14 +317,14 @@ body {
 
 .footer .footer-text,
 .footer .footer-link {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 21px;
     color: #808080;
 }
 
 .footer .footer-text {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .footer-link {
@@ -333,11 +333,11 @@ body {
 
 
 .footer .footer-button {
-    min-height: 60px;
-    min-width: 260px;
+    min-height: 40px;
+    min-width: 220px;
     border: 2px solid #FFFFFF;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
