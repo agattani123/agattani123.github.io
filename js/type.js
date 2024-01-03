@@ -8,7 +8,7 @@ var typed = new Typed(".auto-type", {
 })
 
 var typed = new Typed(".auto-type-2", {
-    strings: ["projects", "hackathons"],
+    strings: ["projects", "programming", "portfolio"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true
