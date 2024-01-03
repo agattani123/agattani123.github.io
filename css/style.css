@@ -126,8 +126,14 @@ body {
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
   }
 
-  
-
+  @media(max-width: 576px) {
+    .container .card .face {
+    width: 100%;
+    display: flex;
+      justify-content: center;
+    flex-wrap: wrap;
+    }
+  } 
   
 
 .header {
@@ -145,6 +151,14 @@ body {
     list-style: none;
 }
 
+@media(max-width: 576px) {
+    .dropdown-btn {
+    width: 100%;
+    display: flex;
+      justify-content: center;
+    flex-wrap: wrap;
+    }
+  } 
 
 .dropdown {
     display: inline-block;
@@ -262,10 +276,6 @@ body {
     font-weight: bold;
     font-size: 40px;
     margin-top: 45px;
-}
-
-.features-title-2{
-    
 }
 
 .features-title-bottom {
