@@ -6,7 +6,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .header {
-    margin-top: 100px;
     padding-top: 50px;
     max-width: 1230px;
     width: 90%;
@@ -15,13 +14,17 @@
     justify-content: space-between;
 }
 .list {
+    position: relative;
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
 }
 .item-link {
+    z-index:5;
+    position: relative;
     color: #FFFFFF;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
@@ -32,7 +35,6 @@
 .second-nav .item-link {
     color: #808080;
 }
-
 /* clouds attribution (pics and css): https://www.youtube.com/watch?v=FWW38GuIo7M */
 .banner{
     position: relative;
