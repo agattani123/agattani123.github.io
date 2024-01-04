@@ -244,4 +244,59 @@
     background-color: #fff;
 }
 
+
+@media(max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .logo {
+        margin-bottom: 2px;
+        width: 1px;
+        height: 1px; 
+    }
+
+    .header .main-nav {
+        margin-bottom: 20px;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .main {
+        padding-top: 50px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .table-column {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .footer .footer-nav .list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .footer-nav .item {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .features {
+        padding-bottom: 30px;
+    }
+
+}
   
