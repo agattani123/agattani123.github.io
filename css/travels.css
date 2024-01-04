@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+.intro-text{
+    padding-left: 50px;
+    margin-left: 50px;
+}
 .header {
     padding-top: 50px;
     max-width: 1230px;
@@ -35,7 +39,7 @@
 .second-nav .item-link {
     color: #808080;
 }
-/* clouds attribution (pics and css): https://www.youtube.com/watch?v=FWW38GuIo7M */
+/* clouds attribution (pictures and animation): https://www.youtube.com/watch?v=FWW38GuIo7M */
 .banner{
     position: relative;
     width: 100%;
@@ -69,11 +73,175 @@
         transform: translateX(100%);
     }
 }
-section{
+
+/* timeline animation attribution: https://www.youtube.com/watch?v=F1yEQR7NWzc */
+
+.timeline ul li {
+    list-style-type: none;
     position: relative;
-    padding: 75px 100pc;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+  }
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%)
+     rotate(45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    background: #eee;
+  }
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 4px 13px 30px 1px
+     rgba(252, 56, 56, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .timeline ul li div time {
+    position: absolute;
+    background: #f5af19;
+    width: 80px;
+    height: 30px;
+    top: -15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+  }
+  .timeline ul li div div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline ul li div div p {
+    text-align: center;
+  }
+  .timeline ul li div .discovery {
+    margin-right: 10px;
+  }
+  .timeline ul li:nth-of-type(odd) > div {
+    left: 45px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -439px;
+  }
+  
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .timeline ul li:nth-of-type(odd) div {
+    transform: translate3d(100px, -10px, 0) rotate(10deg);
+  }
+  .timeline ul li:nth-of-type(even) div {
+    transform: translate3d(-100px, -10px, 0) rotate(10deg);
+  }
+  .timeline ul li.in-view div{
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+  }
+  @media screen and (max-width: 900px){
+      .timeline ul li div{
+          width: 250px;
+          flex-direction: column;
+      }
+      .timeline ul li div div{
+          width: 80%;
+          margin: 10px;
+      }
+      .timeline ul li:nth-of-type(even) > div{
+          left: -289px;
+      }
+  }
+  @media screen and (max-width:600px){
+      body{
+          background: #8bfff4;
+      }
+      .timeline ul li{
+          margin-left: 20px;
+  
+      }
+      .timeline ul li div{
+          width: calc(100vw - 91px);
+      }
+      .timeline ul li:nth-of-type(even) > div{
+          left: 45px;
+      }
+  }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-section h2{
-    font-size: 2.5em;
-    margin-bottom: 20px;
+
+.footer-nav .item-link {
+    font-size: 18px;
+    line-height: 21px;
 }
+
+.footer .logo {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-nav {
+    margin-bottom: 28px;
+}
+
+.footer .footer-text,
+.footer .footer-link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #808080;
+}
+
+.footer .footer-text {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+
+.footer .footer-button {
+    min-height: 40px;
+    min-width: 220px;
+    border: 2px solid #b88e8e;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #b88e8e;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 100px;
+}
+
+.footer .footer-button:hover,
+.footer .footer-button:active {
+    color: #000;
+    background-color: #fff;
+}
+
+  
