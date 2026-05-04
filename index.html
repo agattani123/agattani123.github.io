@@ -1,362 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/vidbg.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>arnav gattani</title>
-    
-     <!-- Bootstrap CSS --->
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arnav Gattani</title>
+    <meta
+      name="description"
+      content="Arnav Gattani — co-founder and CEO of Picket."
     />
-    <!-- Icons CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --fg: #1a1a1a;
+        --muted: #888;
+        --link: #7c2d12;
+        --bg: #ffffff;
+        --rule: #e5e5e5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8e8e8;
+          --muted: #888;
+          --link: #d97757;
+          --bg: #0e0e0e;
+          --rule: #2a2a2a;
+        }
+      }
+      html,
+      body {
+        background: var(--bg);
+        color: var(--fg);
+      }
+      body {
+        font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas,
+          monospace;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.85;
+        max-width: 38rem;
+        margin: 6rem auto;
+        padding: 0 1.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+        -webkit-font-smoothing: antialiased;
+      }
+      p {
+        margin: 0 0 1.6rem;
+      }
+      a {
+        color: var(--link);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--rule);
+        margin: 2.5rem 0;
+      }
+      details {
+        margin: 0 0 1.2rem;
+      }
+      details > summary {
+        cursor: pointer;
+        list-style: none;
+        font-weight: 500;
+        padding: 0.15rem 0;
+        user-select: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      details > summary::before {
+        content: "[+]";
+        display: inline-block;
+        width: 2.2em;
+        color: var(--muted);
+      }
+      details[open] > summary::before {
+        content: "[-]";
+      }
+      details > .body {
+        margin-top: 1rem;
+        padding-left: 2.2em;
+      }
+      details > .body p {
+        margin: 0 0 1.2rem;
+      }
+      details > .body p:last-child {
+        margin-bottom: 0;
+      }
+      details > .body ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      details > .body li {
+        margin: 0 0 0.4rem;
+      }
+      details > .body li:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Hi, this is Arnav Gattani. I am Co-founder and CEO of
+      <a href="https://www.picket.build" rel="noopener">Picket</a>, backed by YC, making American construction twice as
+      productive because we should start building cool things again.
 
-<body>
-    <header class="header">
-        <img src="logos/gatts-logo.png" class="logo" width="60" height="60" data-aos="fade-down">
-        <nav class="main-nav" data-aos="fade-down">
-            <ul class="list">
-                <li class="item"><a href="index.html" class="item-link">About</a></li>
-                <li class="item"><a href="#" class="item-link" id="education-link">Education</a></li>
-                <li class="item"><a href="#" class="item-link" id="projects-link">Projects</a></li>
-                <li class="item"><a href="travels.html"class="item-link">Travel</a></li>
-            </ul>
-        </nav>
-        <nav class="second-nav" data-aos="fade-down">
-            <ul class="list">
-                <li class="item"><a href="mailto:agattani@seas.upenn.edu" class="item-link">Contact</a></li>
-                <li class="item"><a href="Arnav_Gattani_Resume.pdf" class="item-link">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+    </p>  I graduated from Penn with a double major in Computer
+      Science and Physics with minors in Data Science and Mathematics, and
+      completed an MEng in CS (making my parents happier). Previously, I was an ML engineer at AWS implementing models in
+      Amazon's earliest AI rollouts, and before that designing nano-sensors at NASA Ames to
+      detect anthrax.
+    </p>
 
-    <section class="main">
-        <h1 class="title" data-aos="fade-up" data-aos-delay="600">arnav gattani</h1>
-        <p class="description" data-aos="fade-up" data-aos-delay="1000">
-            fourth-year computer science and physics student at the university of pennsylvania.
-            san francisco bay area native and travel enthusiast
+    <p>
+      I am from Sunnyvale and now live in SF. Bay area born and brewed.
+    </p>
+
+    <details>
+      <summary>Interests</summary>
+      <div class="body">
+        <p>
+          I spend a lot of time thinking about how AI can rewire the core
+          processes of physical industries, the backbone of our civilization.
+          I've written papers on using algorithms to
+          <a href="https://drive.google.com/file/d/1C8JfkZZ7vLulmygLdZ-H26slFCCP06h8/view">fix America's inefficient wind farms</a> and a
+          <a href="https://drive.google.com/file/d/1ciqQvjfRoDuhh9JC-J_DLVg4a-5Agrur/view">PAC&#8209;learning framework</a> to resolve AI biases.
+          Earlier on, I led the youngest team ever to win an
+          <a href="https://www.xprize.org/news/ocean-exploration-and-the-quest-to-inspire" rel="noopener">XPRIZE</a>, topographically mapping
+          the ocean floor, and winning a million dollars from NOAA, the US
+          Department of Commerce.
         </p>
-    </section>
 
-    <div class="video" data-aos="fade-up" data-aos-delay="1200"></div>
+        <p>
+          I travel a lot. 43 countries so far, from Oman to Japan to Peru. I
+          also dabble in poker: I recently won the
+          <a
+            href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1378461"
+            rel="noopener"
+            >Aria Poker Classic</a
+          >
+          in Vegas. I started the flagship poker club at Penn, now sponsored by
+          some of the world's leading trading firms. 
+        </p>
+      </div>
+    </details>
 
-    <section id="education" class="features">
-        <div class="container">
-            <h2 class="features-title-2"><span class="auto-type"></span></h2>
-            <div class="row">
-                <div class="col-sm-5">
-                    <hr class="spacer-sections">
-                    <div class="clearfix"></div>
-                    <p class="description" data-aos="fade-up">
-                        I am currently a senior at the University of Pennsylvania persuing a double major in computer science and 
-                        Physics (B.S.E) with a concentration in Business (Wharton School) and minors in mathematics and data science.
-                        I am also concurrently persuing an accelerated masters in computer science (M.S.E) from the school of engineering
-                        and applied sciences. 
-                        <br>
-                        I am passionate about using data and machine learning as a force for good. My research interests lie in energy generation and
-                        quantum computing. I have extensive research and industry experience, having applied ML models on the FAERS drug data in the Shen Lab 
-                        at the Perelman School of Medicine and have worked on classified projects as a research intern for Intrinsyx technologies at NASA Ames Research Center. 
-                        <br>
-                        When I am not in the lab or grinding psets, you can find me at a hackathon, surfing, or even travelling the world, attempting to achieve my goal of
-                        hitting a hundred countries by 2030!
-
-                    </p>
-
-                    <!---
-                    <h2 data-aos="fade-up-right" style="display:inline-block;"> Valley Christian High School 2016-2020
-                        <img src="vchs-logo.png" width="180" height="60" data-aos="fade-down">
-                    </h2>
-                    <p class="features-text"  data-aos="fade-up-right">
-                        Graduated top of my class with High Honors, 4.6 GPA </br>
-                        ACT: 35, SAT I: 1520 (790/730), SAT II Math: 800, 13 AP classes </br>
-                        Awards: AP Scholar with Distinction, California State Science Fair Winner,</br>
-                        Synopsis Silicon Valley Science Fair Winner, Cal National Parliamentary Debate Winner, </br>
-                        Ranked debater (multiple speaker awards), XPRIZE Engineering 1st Place
-                    </p>
-                    --->
-                </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-5" data-aos="fade-up">
-                    <hr class="spacer-sections">
-                    <div class="clearfix"></div>
-                    <p>Coursework:</p>
-                    <div class="dropdown">
-                        <div class="dropdown-btn">Computer Science Theory</div>
-                        <ul class="class-list">
-                          <li>CIS 1210: Algorithms and Data Structures</li>
-                          <li>CIS 5020: Analysis of Algorithms</li>
-                          <li>CIS 2620: Theory of Computation</li>
-                          <li>CIS 2400: Computer Architecture</li>
-                          <li>CIS 3800: Operating System Design and Architecture</li>
-                          <li>CIS 5200: Machine Learning (MS)</li>
-                          <li>CIS 5450: Big Data Analytics (MS)</li>
-                          <li>CIS 5710: Computer Organization (MS)</li>
-                          <li>CIS 5730: Software Engineering (MS)</li>
-                          <li>CIS 5230: Ethical Algorithms Design (MS)</li>
-                          <li>CIS 5500: Database Systems (MS)</li>
-                          <li>CIS 7000: Computational Complexity (PhD)</li>
-                          <li>CIS 6770: Randomized Algorithms (PhD)</li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <div class="dropdown-btn">Physics and Mathematics</div>
-                        <ul class="class-list">
-                          <li>PHYS 1500: Classical Mechanics</li>
-                          <li>PHYS 3351: Analytical Mechanics</li>
-                          <li>PHYS 1510: Electricity and Magnetism</li>
-                          <li>PHYS 1230: Special Relativity and Thermodynamics</li>
-                          <li>PHYS 1250: Modern Physics</li>
-                          <li>PHYS 3364: Labratory Electronics</li>
-                          <li>PHYS 3361: Potential Theory</li>
-                          <li>PHYS 3362: Advanced Electromagnetism: Maxwell's Equations</li>
-                          <li>PHYS 4411: Quantum Mechanics</li>
-                          <li>MATH 1410: Multivariable Calculus</li>
-                          <li>MATH 2400: Differential Equations</li>
-                          <li>MATH 2410: PDE/ODEs</li>
-                          <li>MATH 3120: Linear Algebra</li>
-                          <li>CIS 1600: Discrete Mathematics</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="dropdown">
-                        <div class="dropdown-btn">Business and Economics</div>
-                        <ul class="class-list">
-                          <li>ECON 0010: Microeconomics</li>
-                          <li>ECON 0020: Macroeconomics</li>
-                          <li>BEPP 2500: Managerial Economics</li>
-                          <li>LGST 1010: Legal and Social Values</li>
-                          <li>STAT 4750: Sample Survey Design</li>
-                          <li>STAT 4300: Probability Theory</li>
-                          <li>WRIT 0130: Wall Street Anthropology</li>
-                          <li>Market and Social Systems</li>
-                        </ul>
-                    </div>
-
-                    <div class="dropdown">
-                        <div class="dropdown-btn">Teaching Assistant (TA) Courses</div>
-                        <ul class="class-list">
-                          <li>CIT 5950 (Graduate - Operating Systems Programming) - Fall 2023</li>
-                          <li>CIT 5930 (Graduate - Computer Architecture) - Fall 2022</li>
-                          <li>CIS 2400 (Introduction to Computer Architecture) - Spring 2023, Summer 2023</li>
-                          <li>PHYS 0151 (Principles I: Classical Mechanics) - Fall 2023</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="projects" class="features">
-        <div class="container">
-            <h2 class="features-title-2"><span class="auto-type-2"></span></h2>
-        </div>
-        <hr class="spacer-sections-2">
-        <div class="container">
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <i class="fab fa-windows"></i>            
-                        <h3>LoanTank</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                    <p> P2P system that uses AdaBoost to vet creditworthiness for small business owners. 
-                        Users are provided with semantic search engine to efficiently connect lenders.
-                        Topics: Full Stack Dev, AWS EC2, Node.js, PyTorch, AWS DynamoDB
-                    </p>
-                    <a href="#" type="button">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <i class="fab fa-android"></i>               
-                        <h3>PottyMouth</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                    <p> PennApps '23 best first hack winner. This is a digital swear jar that recognizes user-inputted profane language
-                        with listed statistics and a leaderboard. The software uses Apple's NLP and was coded using Swift (Mongo Realm database). 
-                    </p>
-                    <a href="https://github.com/agattani123/SwearJar" target="_blank" type="button">GitHub</a>
-                    <a href="https://devpost.com/software/swearjar-8huawi" target="_blank" type="button">DevPost</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                    <i class="fab fa-apple"></i>
-                    <h3>PennOS: UNIX-Like Operating System</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                    <p>OS written in C that runs over Linux. Includes a shell which has piping, redicrection, and process creation,
-                        a kernel (POSIX API) that uses the ucontext library to provide multithreading to users, and a FAT filesystem with a user-level API to create files and manage permissions. </p>
-                    <a href="#" type="button">Documentation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            <div class="container">
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <i class="fab fa-windows"></i>            
-                            <h3>Indian Traveller Bot</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p> The software allows the user to create a travel itinerary in India by querying a start and end destination.
-                            Uses a modified shortest path algorithm to add stops throughout the journey based on the quality of reviews and cleanliness. Topics: Java, XPath,
-                            Python, GMaps API. 
-                        </p>
-                        <a href="https://github.com/agattani123/travel-optimizer" target="_blank" type="button">GitHub</a>
-                        <a href="https://github.com/agattani123/travel-optimizer/blob/main/Arnav's%20Travel%20Optimizer%20User%20Manual.pdf" target="_blank" type="button">How to Use</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <i class="fab fa-android"></i>               
-                            <h3>Autonomous Undersea Chemical Detector (MOOS-IvP AUV)</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p> Programmed AUV robot using the MOOS-IvP framework for path detection and iridium tracking coverage. 
-                            Team received $1M award from the NOAA (Department of Commerce) for innovative chemical detection software
-                        </p>
-                        <a href="https://www.cbsnews.com/sanfrancisco/news/valley-christian-high-students-ocean-research-noaa-prize/" target="_blank" type="button">Press Release</a>
-                        <a href="https://www.prnewswire.com/news-releases/breaking-news-valley-christian-schools-awarded-first-place-in-the-national-oceanic-and-atmospheric-administration-noaa-bonus-prize-round-of-the-global-shell-ocean-discovery-xprize-competition-300860401.html" target="_blank" type="button">Report</a>
-                        
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                        <i class="fab fa-apple"></i>
-                        <h3>FriendsBook: Cloud-Based mini-Facebook</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p> Fully functional social media platform with messenger, group chat, friend search and request, account creation, posts,
-                            comments, friend graph visualizer, profiles, and encrypted login. Deployed on Amazon EC2.
-                            </p>
-                        <a href="#" type="button">Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container">
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <i class="fab fa-windows"></i>            
-                            <h3>Modeling International Development</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p> CalHacks '23 submission. We analyzed datasets with over 30 years of
-                            health indicators. We performed EDA on trends such as immunization, education, and carbon emmissions
-                            to predict future development using a combination of models. 
-                            Topics: Data Science, Machine Learning, Python</p>
-                        <a href="https://github.com/agattani123/development-prediction-ML/blob/main/CIS_545_Final_submission.ipynb" target="_blank" type="button">GitHub</a>
-                        <a href="https://devpost.com/software/calculate-your-sustainability-contribution-with-neural-nets" target="_blank" type="button">DevPost</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <i class="fab fa-android"></i>               
-                            <h3>H20 Meter</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p>  Built a water meter using HomeDepot supplies to track household water usage and consumption. 
-                            Connected meter to mobile application to provide real-time analytics and feedback to users. 
-                        </p>
-                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcsef.usc.edu%2FHistory%2F2017%2Fpictures%2FAwards%2FS04HM.html&psig=AOvVaw1ZxDKL_xmfydmT_x0XKVL-&ust=1704366029575000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwij6ayviMGDAxVBaGwGHbzSBAAQr4kDegQIARA7" target="_blank" type="button">Project</a>
-                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DP6-lTY4vSS4&psig=AOvVaw1ZxDKL_xmfydmT_x0XKVL-&ust=1704366029575000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwij6ayviMGDAxVBaGwGHbzSBAAQr4kDegQIARA5" target="_blank" type="button">TEDx Talk</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                        <i class="fab fa-apple"></i>
-                        <h3>MFC Energy Generation in µ-gravity</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                        <p> Created a fuel cell to track the power output and electrical characteristics 
-                            when it is run in a microgravity environment. Powered by Shewanella oneidensis bacteria
-                            and was flown twice to the ISS (2019 and 2020). Received first prize at ASGSR space conference. PI: Dr. Marc</p>
-                        <a href="#" type="button">Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-
-
-    <footer class="footer"  data-aos="fade-up" data-aos-delay="500">
-        <img src="logos/gatts-logo.png" class="logo" width="60" height="60" data-aos="fade-down">
-        <nav class="footer-nav">
-            <ul class="list">
-                <li class="item"><a href="https://www.youtube.com/@arnavgattani2136" target="_blank" class="item-link"> <i class="fa fa-youtube-play" style="font-size:24px"></i> YT </a></li>
-                <li class="item"><a href="https://www.instagram.com/agattani1/" target="_blank" class="item-link"> <i class="fa fa-instagram" style="font-size:24px"></i> IG </a></li>
-                <li class="item"><a href="https://www.linkedin.com/in/arnavgatt" target="_blank" class="item-link"><i class="fa fa-linkedin" style="font-size:24px"></i> LI </a></li>
-                <li class="item"><a href="https://www.github.com/agattani123" target="_blank" class="item-link"><i class="fa fa-github" style="font-size:24px"></i> GH </a></li>
-            </ul>
-        </nav>
-        <p class="footer-text">let me know what you think! <a class="footer-link" href="#"></a></p>
-        <a href="mailto:agattani@seas.upenn.edu" class="footer-button">agattani@seas.upenn.edu</a>
-    </footer>
-
-    <script src="js/vidbg.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/type.js"></script>
-    <script>document.addEventListener("touchstart", function() {}, true);</script>
-
-</body>
+    <details>
+      <summary>Explore</summary>
+      <div class="body">
+        <ul>
+          <li>agattani@gmail.com</li>
+          <li><a href="https://github.com/agattani123" rel="noopener">github</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/arnavgatt/" rel="noopener"
+              >linkedin</a
+            >
+          </li>
+          <li><a href="#writing">writing</a></li> (coming soon)
+        </ul>
+      </div>
+    </details>
+  </body>
 </html>
